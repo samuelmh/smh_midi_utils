@@ -15,7 +15,7 @@ def run():
     """
     parser = argparse.ArgumentParser(
         description="Split a multi-chanel midi file in single channel midi files (1 per channel).",
-        epilog="by: Samuel M.H. <samuel.mh@gmail.com>",
+        epilog="by: Samuel M.H. <https://github.com/samuelmh>",
     )
     parser.add_argument(
         "midi_file",
