@@ -1,1 +1,6 @@
 mido
+
+# MIDI C package Bindings
+# Check libasound2-dev  package is installed.
+python-rtmidi --install-option="--no-jack"  # Use ALSA check
+
