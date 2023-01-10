@@ -16,3 +16,31 @@ Usage example:
 ```bash
 python -m smh_midi_utils.channel_splitter -1 -v multichannel_midi.smf
 ```
+
+
+
+# Functionalities
+Things that are already done with the right tools. No need to code!
+
+## List MIDI devices
+List the available MIDI ports
+
+```bash
+amidi -l
+```
+
+## Record/Play MIDI messages
+Connect to a port and write all the received messages to a file.
+_I.E. Get `sysex` messages to configure the tone of a synth._
+
+```bash
+amidi -p "hw:1,0,0" -r "test.mid" -d
+```
+
+
+## Play MIDI messages
+Connect to a port and send messages from a file.
+_I.E. Set a patch tone with `sysex` messages._
+```bash
+amidi -p "hw:1,0,0" -s "test.mid"
+```
